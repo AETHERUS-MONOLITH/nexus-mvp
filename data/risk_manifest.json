@@ -1,0 +1,63 @@
+{
+  "risk_classes": {
+    "fair_lending_check": {
+      "base_risk": 0.90,
+      "tau_hard_r": 0.20,
+      "regulatory_framework": ["ECOA", "Fair Housing Act"],
+      "article_references": ["15 U.S.C. § 1691", "42 U.S.C. § 3605"],
+      "jurisdiction_modifiers": {
+        "US": 0.15
+      }
+    },
+    "credit_decision": {
+      "base_risk": 0.85,
+      "tau_hard_r": 0.25,
+      "regulatory_framework": ["ECOA", "FCRA", "Regulation B"],
+      "article_references": ["15 U.S.C. § 1691", "12 CFR 1002"],
+      "jurisdiction_modifiers": {
+        "US": 0.15
+      }
+    },
+    "aml_screening": {
+      "base_risk": 0.80,
+      "tau_hard_r": 0.30,
+      "regulatory_framework": ["BSA_AML", "USA PATRIOT Act"],
+      "article_references": ["31 U.S.C. § 5311"],
+      "jurisdiction_modifiers": {
+        "EU": 0.10,
+        "UK": 0.10
+      }
+    },
+    "kyc_verification": {
+      "base_risk": 0.75,
+      "tau_hard_r": 0.30,
+      "regulatory_framework": ["CIP", "OFAC"],
+      "article_references": ["31 CFR 1020.220"],
+      "jurisdiction_modifiers": {
+        "EU": 0.10,
+        "UK": 0.10
+      }
+    },
+    "fraud_assessment": {
+      "base_risk": 0.70,
+      "tau_hard_r": 0.35,
+      "regulatory_framework": ["GLBA", "FTC Safeguards"],
+      "article_references": ["15 U.S.C. § 6801"],
+      "jurisdiction_modifiers": {}
+    },
+    "regulatory_report": {
+      "base_risk": 0.65,
+      "tau_hard_r": 0.40,
+      "regulatory_framework": ["Varies"],
+      "article_references": [],
+      "jurisdiction_modifiers": {}
+    },
+    "general_compliance_query": {
+      "base_risk": 0.15,
+      "tau_hard_r": 0.70,
+      "regulatory_framework": ["N/A"],
+      "article_references": [],
+      "jurisdiction_modifiers": {}
+    }
+  }
+}
