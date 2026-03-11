@@ -11,3 +11,5 @@ venv/
 .idea/
 .vscode/
 .env
+data/ledger.jsonl
+data/reports/

@@ -12,7 +12,7 @@ from enum import Enum
 class IntentType(str, Enum):
     CREDIT_DECISION = "credit_decision"
     AML_SCREENING = "aml_screening"
-    FAIR_LENDING = "fair_lending"
+    FAIR_LENDING_CHECK = "fair_lending_check"
     RISK_ASSESSMENT = "risk_assessment"
     REGULATORY_REPORTING = "regulatory_reporting"
     CUSTOMER_ONBOARDING = "customer_onboarding"
