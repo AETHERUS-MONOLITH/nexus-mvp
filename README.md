@@ -119,9 +119,3 @@ See [`docs/API.md`](docs/API.md) for full interface documentation and [`docs/DEP
 MVP validated. 97/97 tests passing across unit, integration, and governance correctness suites. Risk manifest covers 7 intent classes with US, EU, and UK jurisdiction modifiers. LEDGER audit trail confirmed across all execution paths.
 
 Current phase: **Phase 9 — Pilot Preparation.**
-
----
-
-## License
-
-MIT License. See `LICENSE` for details.
