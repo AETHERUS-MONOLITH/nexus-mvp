@@ -1,0 +1,27 @@
+[93mWARNING: ANTHROPIC_API_KEY not set. Running NEXUS only.[0m
+
+[96m[1m╔══════════════════════════════════════════════════════════════╗[0m
+[96m[1m║           NEXUS GOVERNANCE REPORT — AETHERUS                ║[0m
+[96m[1m╚══════════════════════════════════════════════════════════════╝[0m
+
+QUERY:        Wire transfer to sanctioned jurisdiction
+JURISDICTION: US  |  FRAMEWORK: ECOA
+TIMESTAMP:    2026-05-06T18:26:45Z
+
+[96m──────────────────────────────────────────────────────────────[0m
+ [1mNEXUS PIPELINE[0m
+[96m──────────────────────────────────────────────────────────────[0m
+
+[2mΑ  (intake)     status=pending       uncertainty.binding=False[0m
+Δ  (risk eval)  intent=aml_screening  risk=0.8  status=[91mBLOCKED[0m
+Ω  (decision)   [91m[1mESCALATE → defer_to_compliance_officer[0m
+
+REASONING:    aml_screening risk score 0.8 exceeds hard gate τ=0.3 — BSA_AML, USA PATRIOT Act exposure
+NEXT ACTION:  Manual review required — route to BSA/AML Officer
+REG REFS:     BSA_AML, USA PATRIOT Act
+RUN ID:       [2m1fc4dcf3-ab88-4990-ba5f-2d0af8f741d5[0m
+
+[92mAudit trail:    LEDGER entry written ✓[0m
+[92mDeterministic:  YES[0m
+
+[96m══════════════════════════════════════════════════════════════[0m

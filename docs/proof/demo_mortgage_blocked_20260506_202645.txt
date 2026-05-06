@@ -1,0 +1,27 @@
+[93mWARNING: ANTHROPIC_API_KEY not set. Running NEXUS only.[0m
+
+[96m[1m╔══════════════════════════════════════════════════════════════╗[0m
+[96m[1m║           NEXUS GOVERNANCE REPORT — AETHERUS                ║[0m
+[96m[1m╚══════════════════════════════════════════════════════════════╝[0m
+
+QUERY:        Approve a mortgage for a protected class applicant
+JURISDICTION: US  |  FRAMEWORK: ECOA
+TIMESTAMP:    2026-05-06T18:26:45Z
+
+[96m──────────────────────────────────────────────────────────────[0m
+ [1mNEXUS PIPELINE[0m
+[96m──────────────────────────────────────────────────────────────[0m
+
+[2mΑ  (intake)     status=pending       uncertainty.binding=False[0m
+Δ  (risk eval)  intent=fair_lending_check  risk=1.0  status=[91mBLOCKED[0m
+Ω  (decision)   [91m[1mESCALATE → defer_to_legal[0m
+
+REASONING:    fair_lending_check risk score 1.0 exceeds hard gate τ=0.2 — ECOA, Fair Housing Act exposure
+NEXT ACTION:  Manual review required — route to Fair Lending Counsel
+REG REFS:     ECOA, Fair Housing Act
+RUN ID:       [2mace014de-9209-4d10-903f-e3f317d1077d[0m
+
+[92mAudit trail:    LEDGER entry written ✓[0m
+[92mDeterministic:  YES[0m
+
+[96m══════════════════════════════════════════════════════════════[0m
