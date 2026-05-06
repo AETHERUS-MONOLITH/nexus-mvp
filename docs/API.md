@@ -39,14 +39,13 @@ OUTPUT: { decision, variant, reasoning, audit_record }
 
 ### Requirements
 
-- Python 3.11+ recommended (built and tested on 3.9.6; minimum 3.9)
+- Python 3.9+ supported for the MVP. Public proof runs are validated on Python 3.9.6.
 - `pip install -r requirements.txt`
 
 ### Dependencies
 
 ```
 anthropic>=0.39.0      # Α operator LLM decomposition (optional if using fallback)
-openai>=1.0.0          # Reserved — not used in MVP
 pydantic>=2.0.0        # Cell and schema validation
 pytest>=7.4.0          # Test suite
 pytest-cov>=4.1.0      # Coverage reporting
@@ -104,7 +103,7 @@ nexus-mvp/
 Create a `.env` file in the project root:
 
 ```bash
-echo "ANTHROPIC_API_KEY=sk-ant-..." > ~/Desktop/nexus-mvp/.env
+echo "ANTHROPIC_API_KEY=sk-ant-..." > .env
 ```
 
 **Critical:** `.env` is listed in `.gitignore`. The API key must never be committed to version control.

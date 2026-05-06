@@ -1,5 +1,5 @@
 # NEXUS MVP Dependencies
-# Python 3.11+
+# Python 3.9+
 
 # LLM API Integration (for Α operator)
 anthropic>=0.39.0

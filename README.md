@@ -58,10 +58,13 @@ OUTPUT: { decision, variant, reasoning, regulatory_reference, audit_record }
 ### 1. Install
 
 ```bash
-git clone https://github.com/camilocarlone/nexus-mvp.git
+git clone https://github.com/AETHERUS-MONOLITH/nexus-mvp.git
 cd nexus-mvp
 pip install -r requirements.txt
 ```
+
+Python 3.9+ is supported for the MVP. The public proof run is validated on
+Python 3.9.6.
 
 ### 2. Configure
 

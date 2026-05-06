@@ -27,7 +27,7 @@ For API interface documentation, see [`docs/API.md`](./API.md).
 
 ### Python
 
-Python **3.11+** required. Built and tested on macOS (Darwin 25.3.0) and Ubuntu 24 LTS.
+Python **3.9+** is supported for the MVP. Public proof runs are validated on Python 3.9.6.
 
 ### Operating System
 
@@ -75,14 +75,11 @@ pip install -r requirements.txt
 
 ```
 anthropic>=0.39.0      # Α operator LLM decomposition (optional — fallback activates if absent)
-openai>=1.0.0          # Reserved — not used in MVP
 pydantic>=2.0.0        # Cell and schema validation (Pydantic v2 required)
 pytest>=7.4.0          # Test suite
 pytest-cov>=4.1.0      # Coverage reporting
 python-dotenv>=1.0.0   # .env file loading in demo_runner.py and tests
 ```
-
-> **Note:** `openai` is listed in requirements.txt but is not called by any operator in the current MVP. It is reserved for future integration.
 
 ### Step 3: Verify directory structure
 
@@ -566,9 +563,6 @@ The following fields are defined in the schema but their population logic is not
 
 **`IntentType` enum vs. manifest keys**
 > The `IntentType` enum in `src/schemas/fintech_payload.py` defines `FAIR_LENDING = "fair_lending"`, but the manifest key and all operator logic use `"fair_lending_check"`. The enum is not used by any operator — operators use plain string literals matching manifest keys. This mismatch does not affect runtime behavior but creates a documentation inconsistency.
-
-**`openai` dependency**
-> `openai>=1.0.0` is listed in `requirements.txt` but is not imported or called by any operator in the current MVP. It is reserved for future use.
 
 ---
 
