@@ -117,6 +117,12 @@ See [`docs/API.md`](docs/API.md) for full interface documentation and [`docs/DEP
 
 ---
 
+## License
+
+Licensed under the Apache License 2.0. See LICENSE.
+
+---
+
 ## Project Status
 
 MVP validated. 97/97 tests passing across unit, integration, and governance correctness suites. Risk manifest covers 7 intent classes with US, EU, and UK jurisdiction modifiers. LEDGER audit trail confirmed across all execution paths.
